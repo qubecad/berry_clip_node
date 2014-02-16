@@ -8,6 +8,7 @@ an example of controlling a Berry Clip Raspberry Pi Addon board from node.js usi
 Dependancies
 
 Node.js     (install instructions for Raspberry Pi at: https://github.com/DonaldDerek/rPi-cheat-sheet)
+
 gpio-admin  (install from https://github.com/quick2wire/quick2wire-gpio-admin
 
             git clone git://github.com/quick2wire/quick2wire-gpio-admin.git
@@ -19,7 +20,11 @@ gpio-admin  (install from https://github.com/quick2wire/quick2wire-gpio-admin
             logout and back in login for changes to be loaded.
             )
 
-onoff       ( https://github.com/fivdi/onoff sudo npm onoff requires node.js version 0.8.0 or higher)
+onoff       ( https://github.com/fivdi/onoff 
+            
+            sudo npm onoff 
+            
+            requires node.js version 0.8.0 or higher)
 
 
 to run: ./run.sh
