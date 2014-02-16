@@ -29,6 +29,6 @@ onoff       ( https://github.com/fivdi/onoff
 
 to run: ./run.sh
 
-run.sh exports the gpio pins need to run non root as well as starting the node script.
+run.sh exports the gpio pins needed to run non root as well as starting the node script.
 
 Based on the example code provided with onoff.
