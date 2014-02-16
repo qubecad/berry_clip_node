@@ -7,10 +7,11 @@ var Gpio = require('onoff').Gpio,
     ledF = new Gpio(11, 'out'),
     button = new Gpio(07, 'in', 'both');
 var leds=new Array(ledA,ledB,ledC,ledD,ledE,ledF);
+var lastLed=ledA;
 
 button.watch(function(err, value) {
-   // led.writeSync(value);
- var activeLed=Math.floor(Math.random() * 6);
-
-leds[activeLed].writeSync(value);
+  var activeLed=Math.floor(Math.random() * 6);
+  lastLed.writeSync(0);
+  lastLed=leds[activeLed];
+  leds[activeLed].writeSync(value);
 });
